@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerConnect AI Coach - CV Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">CareerConnect <span>AI Coach</span></div>
+        <nav>
+            <a href="#home" class="home-link">Home</a>
+            <a href="#cv-form">Build CV</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div id="home" class="homepage-section">
+        <div class="homepage-hero">
+            <h1>Welcome to CareerConnect AI Coach</h1>
+            <p>Your personal AI-powered assistant for building professional CVs and preparing for your career journey.</p>
+            <a href="#cv-form" class="get-started-btn">Get Started</a>
+        </div>
+        <div class="homepage-features">
+            <h2>Why CareerConnect?</h2>
+            <ul>
+                <li>AI-driven, step-by-step CV building</li>
+                <li>Instant, professional CV preview and download</li>
+                <li>Upload and showcase your certifications</li>
+                <li>Personalized tips and guidance</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Build Your Professional CV</h1>
+        <p>Let our AI guide you to create a standout resume for your career journey.</p>
+        <form id="cv-form">
+            <h2>Personal Information</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="linkedin">LinkedIn Profile:</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+
+            <h2>Education</h2>
+            <label for="education">Education Details:</label>
+            <textarea id="education" name="education" placeholder="E.g. Diploma in Computer Science, XYZ Polytechnic, 2022-2025" required></textarea>
+
+            <h2>Experience</h2>
+            <label for="experience">Work/Internship Experience:</label>
+            <textarea id="experience" name="experience" placeholder="E.g. Software Intern at ABC Company, May 2024 - Aug 2024&#10;- Developed a web app using React and Node.js&#10;- Collaborated with a team of 5 to deliver project milestones" required></textarea>
+
+            <h2>Projects</h2>
+            <label for="projects">Key Projects:</label>
+            <textarea id="projects" name="projects" placeholder="E.g. Final Year Project: AI Chatbot for Career Guidance&#10;- Built with Python and TensorFlow&#10;- Deployed for 200+ users"></textarea>
+
+            <h2>Skills & Certifications</h2>
+            <label for="skills">Skills:</label>
+            <textarea id="skills" name="skills" placeholder="E.g. Python, JavaScript, Teamwork, Communication" required></textarea>
+
+            <label for="certs">Certifications (optional):</label>
+            <textarea id="certs" name="certs" placeholder="E.g. Google Data Analytics Certificate"></textarea>
+
+            <label for="cert-images">Upload Certification Images (optional):</label>
+            <input type="file" id="cert-images" name="cert-images" accept="image/*" multiple>
+
+            <button type="submit">Generate CV</button>
+        </form>
+        <div id="cv-preview" class="cv-preview"></div>
+    </div>
+    <section id="features" class="info-section">
+        <h2>Features</h2>
+        <ul>
+            <li>Step-by-step AI guidance for each CV section</li>
+            <li>Modern, professional CV templates</li>
+            <li>Instant preview and easy download</li>
+            <li>Personalized tips for improvement</li>
+        </ul>
+    </section>
+    <section id="about" class="info-section">
+        <h2>About CareerConnect AI Coach</h2>
+        <p>CareerConnect AI Coach is designed to empower students and job seekers with the tools and guidance needed to build outstanding CVs and prepare for their careers. Our AI-driven platform ensures every user receives personalized, actionable feedback.</p>
+    </section>
+    <section id="contact" class="info-section">
+        <h2>Contact</h2>
+        <p>For support or feedback, email us at <a href="mailto:support@careerconnect.com">support@careerconnect.com</a></p>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
